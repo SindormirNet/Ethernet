@@ -17,8 +17,10 @@
 #include <Arduino.h>
 #include <SPI.h>
 
+#warning "------------------- Bajando velocidad del SPI a 4Mhz ----------------"
+
 // Safe for all chips
-define SPI_ETHERNET_SETTINGS SPISettings(4000000, MSBFIRST, SPI_MODE0) //SYV Modificado por sindormir.net. Was 14000000
+#define SPI_ETHERNET_SETTINGS SPISettings(4000000, MSBFIRST, SPI_MODE0) //SYV Modificado por sindormir.net. Was 14000000
 
 // Safe for W5200 and W5500, but too fast for W5100
 // Uncomment this if you know you'll never need W5100 support.

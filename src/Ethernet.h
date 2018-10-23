@@ -53,7 +53,7 @@
 #include "Server.h"
 #include "Udp.h"
 
-#warning "------------------- ETHERNET 2.0 ENABLED ----------------------------"
+#warning "------------------- ETHERNET 2.0 ENABLED -----------------------------"
 
 
 enum EthernetLinkStatus {
