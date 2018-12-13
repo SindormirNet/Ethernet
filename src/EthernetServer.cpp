@@ -120,6 +120,14 @@ EthernetServer::operator bool()
 	return false;
 }
 
+int EthernetServer::statusreport(int i) {
+
+    uint8_t stat = Ethernet.socketStatus(i);
+
+    return stat;
+}
+
+
 #if 0
 void EthernetServer::statusreport()
 {
